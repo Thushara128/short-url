@@ -49,10 +49,10 @@
                             <td>
                               <input type="text" value={{ route('shorten.link', $row->code) }} id="myInput" style="display:none">
                           <button class="btn btn-primary" onclick="myFunction()">Copy Shorturl</button>
-                                
                             </td>
                             </tr>
                     @endforeach
+                  
                 </tbody>
             </table>
       </div>

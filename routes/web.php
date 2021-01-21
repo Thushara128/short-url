@@ -26,4 +26,3 @@ Route::post('shorten-link', [ShortLinkController::Class,'store'])->name('generat
    
 Route::get('{code}', [ShortLinkController::Class,'shortenLink'])->name('shorten.link');
 Route::get('/delete/{id}',[ShortLinkController::Class,'delete']);
-Route::get('/copy/{id}',[ShortLinkController::Class,'copy']);

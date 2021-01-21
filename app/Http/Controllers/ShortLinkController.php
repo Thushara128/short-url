@@ -42,6 +42,16 @@ class ShortLinkController extends Controller
         ShortLink::find($id)->delete();
        return redirect('shorten-link');
    }
-   
+//    function copy($id){
+//    $data=DB::select("select * from short_links where id='$id'");
+//    foreach($data as $d)
+//    {
+//      $scode =$d->code;
+//      $codeURL=route('shorten.link', $scode);
+//      session()->flash('codeurl',$codeURL);
+//      return redirect('shorten-link');
+//    }
+//    dd($data);
+// }
 }
 
